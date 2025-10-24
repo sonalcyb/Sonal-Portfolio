@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
+<html lang="en" scroll-behavior: smooth; >
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonal Portfolio</title>
+
+    <!--------Tailwind Css------>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="./text/tailwindcss.js"></script>
-  </head>
-</head>
+    <script src="./tailwind.config.js"></script>
+
+    <!--------Css Link------->
+    <link rel="stylesheet" href="./Services/style.css"
+    
+ </head>
 <body class="overflow-x-hidden">
+
+<!--------Header background------->
 
 <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
     <img src="./assets/header bg.png" alt="" class="w-full">
@@ -16,7 +23,7 @@
 
 
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex
-    items-center justify-between z-50">
+    items-center justify-between z-50 bg-gray-300 ">
         <img src="./assets/logo.png" alt="Logo"
         class="w-28 cursor-pointer mr-14">
         <Ul class="hidden md:flex items-center gap-6 lg:gap-8
@@ -33,14 +40,13 @@
             class="w-6"></button>
 
         <a href="#contact"
-        class="hidden lg:flex items-center gap-3 px-10 py-2.5 border
-        border-gray-500 rounded-full ml-4">
+        class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">
         Contact
             <img src="./assets/arrow.png"alt=""
             class="w-3"></a>
 
         <button class="block md:hidden ml-3" onclick="openMenu()">
-            <img src="./assets/menu.jpg" alt="" class="w-8">
+            <img src="./assets/menuicon.png" alt="" class="w-8">
         </button>
 
 </div>
@@ -170,7 +176,95 @@ Cybersecurity professionals defend against threats like hacking, malware, and da
 </div>
 
 <!-----------services----------->
+   <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h4 class="text-center mb-2 text-lg">What i offer</h4>
+    <h2 class="text-center text-5xl">My Services</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I am a frontend developer from California, USA with 10 years of experience
+         in multiple companies like Microsoft, Tesla and Apple.
+    </p>
+<style>
+  /* Neon border glow effect */
+  .neon-border {
+    transition: all 0.3s ease-in-out;
+  }
+  .neon-border:hover,
+  .neon-border:active {
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff, 0 0 45px #00ffff;
+    border-color: #00ffff;
+  }
+</style>
 
+<section class="my-10 px-4">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+    <!-- Card 1 -->
+    <div class="neon-border border border-gray-600 rounded-lg px-8 py-12 bg-[#0f172a]
+                shadow-md transform transition-all duration-300 ease-in-out 
+                hover:scale-105 active:scale-105 cursor-pointer">
+      <img src="./assets/web.png" alt="web design" class="w-12 mx-auto">
+      <h3 class="text-lg my-4 text-cyan-400 font-semibold text-center">Web Design</h3>
+      <p class="text-sm text-gray-300 leading-5 text-center">
+        Web development is the process of building, programming.
+      </p>
+      <a href="./Services/cyber.html"
+         class="flex items-center justify-center gap-2 text-sm mt-5 text-cyan-300 hover:underline">
+        Read More 
+        <img src="./assets/right arrow white.png" alt="arrow" class="w-4">
+      </a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="neon-border border border-gray-600 rounded-lg px-8 py-12 bg-[#0f172a]
+                shadow-md transform transition-all duration-300 ease-in-out 
+                hover:scale-105 active:scale-105 cursor-pointer">
+      <img src="./assets/mobile.png" alt="cybersecurity" class="w-12 mx-auto">
+      <h3 class="text-lg my-4 text-cyan-400 font-semibold text-center">Cybersecurity</h3>
+      <p class="text-sm text-gray-300 leading-5 text-center">
+        Protecting systems and networks from digital attacks and data breaches.
+      </p>
+      <a href="./Services/cybercrime.html"
+         class="flex items-center justify-center gap-2 text-sm mt-5 text-cyan-300 hover:underline">
+        Read More 
+        <img src="./assets/right arrow white.png" alt="arrow" class="w-4">
+      </a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="neon-border border border-gray-600 rounded-lg px-8 py-12 bg-[#0f172a]
+                shadow-md transform transition-all duration-300 ease-in-out 
+                hover:scale-105 active:scale-105 cursor-pointer">
+      <img src="./assets/graphic.png" alt="app development" class="w-12 mx-auto">
+      <h3 class="text-lg my-4 text-cyan-400 font-semibold text-center">App Development</h3>
+      <p class="text-sm text-gray-300 leading-5 text-center">
+        Building mobile apps with smooth UI and powerful backend support.
+      </p>
+      <a href="./Services/networksecurity.html"
+         class="flex items-center justify-center gap-2 text-sm mt-5 text-cyan-300 hover:underline">
+        Read More 
+        <img src="./assets/right arrow white.png" alt="arrow" class="w-4">
+      </a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="neon-border border border-gray-600 rounded-lg px-8 py-12 bg-[#0f172a]
+                shadow-md transform transition-all duration-300 ease-in-out 
+                hover:scale-105 active:scale-105 cursor-pointer">
+      <img src="./assets/ui.png" alt="networking" class="w-12 mx-auto">
+      <h3 class="text-lg my-4 text-cyan-400 font-semibold text-center">Networking</h3>
+      <p class="text-sm text-gray-300 leading-5 text-center">
+        Networking connects systems and devices for seamless communication.
+      </p>
+      <a href="./Services/incidentresponse.html"
+         class="flex items-center justify-center gap-2 text-sm mt-5 text-cyan-300 hover:underline">
+        Read More 
+        <img src="./assets/right arrow white.png" alt="arrow" class="w-4">
+      </a>
+    </div>
+
+  </div>
+</section>
+
+ </div>
 
 <script src="script.js"></script>
 </body>
